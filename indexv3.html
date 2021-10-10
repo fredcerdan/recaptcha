@@ -8,7 +8,7 @@
     <div class="card">
       <h2 class="card-header">Contact Form</h2>
       <div class="card-body">
-        <form class="contact_form" method="post" action="mail.php">
+        <form class="contact_form" method="post" action="action to backend">
 
           <!-- form fields -->
           <div class="row">
@@ -54,7 +54,7 @@
 <script>
   grecaptcha.ready(function() {
     grecaptcha.execute('6LfdGb8cAAAAAFpPUxzR9zJih21Htx4hCwF32fgf', {action: 'homepage'}).then(function(token) {
-       // console.log(token);
+       console.log(token);
        document.getElementById("token").value = token;
     });
     // refresh token every minute to prevent expiration
